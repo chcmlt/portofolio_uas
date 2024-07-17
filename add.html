@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="add.css">
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="laptop.mp4" type="video/mp4">
+    </video>
+    <header>
+        <h1>Registration Form</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="form.html">Register</a></li> 
+                <li><a href="add.html">Add New</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="card">
+        <h2>Register Here</h2>
+        <form id="registration-form" action="profil.html">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="nim">NIM:</label>
+                <input type="text" id="nim" name="nim" required>
+            </div>
+            <div class="form-group">
+                <label for="prodi">Prodi:</label>
+                <input type="text" id="prodi" name="prodi" required>
+            </div>
+            <div class="form-group">
+                <label for="tanggal_lahir">Tanggal Lahir:</label>
+                <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat:</label>
+                <textarea id="alamat" name="alamat" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="status_mahasiswa">Status Mahasiswa:</label>
+                <select id="status_mahasiswa" name="status_mahasiswa" required>
+                    <option value="aktif">Aktif</option>
+                    <option value="cuti">Cuti</option>
+                    <option value="lulus">Lulus</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Chocomelt. All rights reserved.</p>
+    </footer>
+</body>
+</html>
